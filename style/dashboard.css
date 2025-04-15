@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+:root {
+  --primary-color: #0c475d;
+  --hover-color: #cad2d3;
+  --accent-color: #00479e;
+  --text-color: #fdfdfd;
+}
+
+#dashboardMainContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+div.dashboard_sidebar{
+  width: 20%;
+  background:#0c475d;
+  height: 100vh;
+}
+div.dashboard_content_container{
+  width: 80%;
+  color: darkslategrey;
+}
+h3.dashboard_logo{
+  color: #fdfdfd;
+  font-size: 30px;
+  font-family: Poppins, 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+div.dashboard_sidebar_user{
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+div.dashboard_sidebar_user img{
+  width: 60px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+div.dashboard_sidebar_user span{
+  top: 20%;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-family: Poppins, 'Segoe UI', sans-serif;
+  }
+ul.dashboard_menu_lists{
+  margin-top: 20px;
+  padding: 5px;
+  font-family: Poppins, 'Segoe UI', sans-serif;
+}
+ul.dashboard_menu_lists li{
+  padding: 15px 15px;
+  text-transform: uppercase;
+}
+ul.dashboard_menu_lists li a{
+  text-decoration: none;
+  color: #fdfdfd;
+  display: block;
+  font-size: 20px;
+}
+ul.dashboard_menu_lists li a i {
+  font-size: 25px;
+}
+ul.dashboard_menu_lists li.menuActive{
+  color: var(--text-color);
+  background: #142233;
+}
+ul.dashboard_menu_lists li:hover{
+  color: var(--text-color);
+  background: #142233;
+  transition: 0.3s all;
+}
+div.dashboard_topNav{
+  background: #ece3e3;
+  padding: 20px;
+  font-family: Poppins, 'Segoe UI', sans-serif;
+}
+div.dashboard_topNav a{
+  color:#708386;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+a#logoutBtn{
+  float: right;
+  
+}
+div.dashboard_content{
+  padding: 50px 10px 10px 10px;
+}
+div.dashboard_content_main{
+  background: #ece3e3;
+  min-height: 800px;
+  height: 100%;
+}
+
+form.appForm::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+form.appForm{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-family: Poppins, 'Segoe UI', sans-serif;
+  background: #b8c9cc;
+}
+form label{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+form input.appFormInputs{
+  width: 100%;
+  height: 33px;
+  border: 1px var(--primary-color);
+  border-radius: 5px;
+}
+
+div.appFormInputContainer{
+  margin-bottom: 15px;
+}
+
+div#userAddFormContainer{
+  padding-top: 100px;
+}
+
+button.appBtn{
+  background: #205fac;
+  border: 1px solid #205fac;
+  color: #fdfdfd;
+  padding: 10px;
+  margin-top: 20px;
+  float: right;
+}
+
+button.appBtn:hover{
+  color:#142233;
+  background: #00479e;
+  transition: 0.3s all;
+}
+
+p.reponse_message{
+  font-size: 15px;
+  text-align: center;
+  margin-top: 31px;
+  padding: 20px;
+}
+
+p.reponseMessage_error{
+  background: rgb(150, 2, 2);
+
+}
+
+p.responseMessage_success{
+  background: rgb(4, 160, 4);
+
+}
+
+div.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+div.column{
+  width: 100%;
+  padding: 0px 10px;
+}
+
+div.column-5{
+  width: 41.67%;
+}
+
+div.column-7{
+  width: 47.67%;
+}
+
+h1.section_header{
+  font-family: Poppins, 'Segoe UI', sans-serif; 
+  font-size:21px; 
+  color:var(--primary-color); 
+  border-bottom: 2px solid var(--primary-color); 
+  padding-bottom: 11px;
+  padding:10px;
+  border-left: 4px solid var(--accent-color);
+}
+
+div.users table, th, td{
+  font-family: Poppins, 'Segoe UI', sans-serif; 
+  border: 2px solid rgb(187, 175, 175);
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+table th {
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+table{
+  width: 100%;
+}
+
+table td{
+  font-size: 13;
+  text-align: center;
+  padding: 3.5px;
+}
+
+p.userCount{
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1d2b68;
+  font-family: Poppins, 'Segoe UI', sans-serif;
+}
